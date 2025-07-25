@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+   <link rel="icon" type="image/png" href="assets/favicon.png" sizes="96x96" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kharla's Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <img src="assets/logo.png" alt="Logo" class="logo-bounce" />
+  </div>
+
+  <!-- Welcome Section -->
+<section id="welcome">
+  <div class="scroll-beside">
+    <h1>Welcome to My Portfolio</h1>
+    <button onclick="scrollToSection('menu')" class="arrow-button">↓</button>
+  </div>
+</section>
+
+
+  <!-- Menu Section -->
+<section id="menu">
+  <div class="menu-container">
+    <!-- Left: 2x2 Grid of Categories -->
+    <div class="menu-grid">
+      <div class="menu-item about-box" onclick="scrollToSection('about')">About Me →</div>
+      <div class="menu-item projects-box" onclick="scrollToSection('projects')">Works →</div>
+      <div class="menu-item skills-box" onclick="scrollToSection('skills')">Skills and Certificates →</div>
+      <div class="menu-item contact-box" onclick="scrollToSection('contact')">Contact →</div>
+    </div>
+
+    <!-- Right: Logo + CV Button -->
+    <div class="menu-side">
+      <img src="assets/logo.png" class="menu-logo" alt="My Logo" />
+      <a href="assets/cv.pdf" download>
+        <button class="download-btn">Download CV</button>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+<section id="about">
+  <!-- Top Navigation -->
+  <nav class="about-nav">
+    <a href="#projects">WORKS</a>
+    <a href="#skills">SKILLS AND CERTIFICATES</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <!-- Main About Content -->
+  <div class="about-content">
+    <!-- Image Container -->
+    <div class="about-image">
+      <img src="assets/gradpic2.jpg" alt="Graduation Picture" />
+    </div>
+
+    <!-- Text Container -->
+    <div class="about-text">
+      <h2>Kharla Rhoen Manabat </h2>
+      <p>
+        I'm an aspiring web developer with a passion for crafting digital experiences.
+        I've studied HTML, CSS, and JavaScript, and many more languages cultivating a foundation for front-end and back-end development.
+        I thrive on collaborative projects that will help me improve my teamwork skills. I am eager to contribute my evolving skills to the dynamic world of web development.
+        I look forward to creating user-friendly and innovative solutions, embracing challenges, and continually pushing the boundaries of what's possible in this exciting field.
+      </p>
+      <p>
+        Graduated at Holy Angel University Pampanga – Batch 2025<br />
+        Bachelor of Science in Information Technology – With Area of Specialization in Web Development
+      </p>
+      <h3>My Goals</h3>
+      <ul>
+        <li>Improve my growth mindset</li>
+        <li>Improve skills in my career</li>
+        <li>Gain financial freedom</li>
+        <li>Be persistent despite obstacles</li>
+        <li>Learn something new everyday</li>
+      </ul>
+
+      <button class="view-cert-btn" onclick="showCertificate()">VIEW GRADUATION CERTIFICATE</button>
+   
+      <!-- Certificate Popup Modal -->
+<div id="certificateModal" class="certificate-modal">
+  <span class="close-btn" onclick="closeCertificate()">&times;</span>
+  <img src="assets/gradcert.jpg" alt="Graduation Certificate" class="certificate-img" />
+</div>
+
+   
+   
+    </div>
+  </div>
+</section>
+
+
+ <!-- ===== PROJECTS SECTION ===== -->
+<section id="projects">
+  <!-- Top Navigation -->
+  <nav class="projects-nav">
+    <a href="#about">ABOUT ME</a>
+    <a href="#skills">SKILLS AND CERTIFICATES</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <h2 class="projects-title">SCHOOL PROJECTS</h2>
+
+  <!-- Carousel Container -->
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <!-- Original Project Cards -->
+      <div class="project-card">
+        <img src="assets/proj1.jpg" alt="Project 1" />
+        <p class="project-caption">Wordpress Project with Google Anayltics Report</p>
+        <button class="view-project-btn">VIEW PROJECT</button>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/proj2.jpg" alt="Project 2" />
+        <p class="project-caption">WordPress Blog Individual Project</p>
+        <button class="view-project-btn">VIEW PROJECT</button>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/proj3.jpg" alt="Project 3" />
+        <p class="project-caption">Read Rover Finals Project</p>
+        <button class="view-project-btn">VIEW PROJECT</button>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/proj4.png" alt="Project 4" />
+        <p class="project-caption">Web Application Proposal Flawless Findings using MongoDB</p>
+        <button class="view-project-btn">VIEW PROJECT</button>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/proj5.jpg" alt="Project 5" />
+        <p class="project-caption">Final Project in OOPLANG Sky Airline using Netbeans and SQL</p>
+        <button class="view-project-btn">VIEW PROJECT</button>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/proj6.jpg" alt="Project 6" />
+        <p class="project-caption">Speak Sharp Final Output for INFOMAN using XAMPP, PHP, and SQL</p>
+        <button class="view-project-btn">VIEW PROJECT</button>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/proj7.jpg" alt="Project 7" />
+        <p class="project-caption">C'est la Vie Botique WCServer Project</p>
+        <button class="view-project-btn">VIEW PROJECT</button>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/proj8.jpg" alt="Project 8" />
+        <p class="project-caption">Final Website for WebTech using HTML/CSS & JS</p>
+        <button class="view-project-btn">VIEW PROJECT</button>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/proj9.jpg" alt="Project 9" />
+        <p class="project-caption">Capstone Thesis Final Project</p>
+        <button class="view-project-btn">VIEW PROJECT</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ <section id="skills">
+  <!-- Navigation -->
+  <nav class="skills-nav">
+    <a href="#about">ABOUT ME</a>
+    <a href="#projects">WORKS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <h2 class="skills-title">SKILLS AND CERTIFICATES</h2>
+
+  <div class="skills-container">
+    <!-- First Container (Left): Programming Languages -->
+    <div class="skills-languages">
+  <h3>Programming Languages, Frameworks, and Tools 
+
+  <div class="skills-icons">
+    <div class="skill-icon">
+      <img src="assets/html.png" alt="HTML" />
+    </div>
+    <div class="skill-icon">
+      <img src="assets/css.png" alt="CSS" />
+    </div>
+    <div class="skill-icon">
+      <img src="assets/js.png" alt="JavaScript" />
+    </div>
+    <div class="skill-icon">
+      <img src="assets/php.png" alt="PHP" />
+    </div>
+     <div class="skill-icon">
+      <img src="assets/bs.png" alt="BOOTSTRAP" />
+    </div>
+    <div class="skill-icon">
+      <img src="assets/tail.png" alt="TAILWIND" />
+    </div>
+     <div class="skill-icon">
+      <img src="assets/python.png" alt="PYTHON"/>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/java.png" alt="JAVA" />
+    </div>
+    <div class="skill-icon">
+      <img src="assets/sql.png" alt="SQL"/>
+    </div>
+     <div class="skill-icon">
+      <img src="assets/xampp.png" alt="XAMPP" />
+    </div>
+     <div class="skill-icon">
+      <img src="assets/mongodb.png" alt="MONGODB" />
+    </div>
+     <div class="skill-icon">
+      <img src="assets/laravel.png" alt="LARAVEL" />
+    </div>
+     <div class="skill-icon">
+      <img src="assets/angular.png" alt="ANGULAR" />
+    </div>
+     <div class="skill-icon">
+      <img src="assets/vue.png" alt="VUE" />
+    </div>
+     <div class="skill-icon">
+      <img src="assets/react.png" alt="REACT" />
+    </div>
+     <div class="skill-icon">
+      <img src="assets/canva.png" alt="CANVA" />
+    </div>
+     <div class="skill-icon">
+      <img src="assets/wordpress.png" alt="WORDPRESS" />
+    </div>
+     <div class="skill-icon">
+      <img src="assets/vs.png" alt="VISUAL STUDIO" />
+    </div>
+
+  </div>
+</div>
+
+
+    <!-- Second Container (Right Top): Certifications -->
+    <!-- Certification Container -->
+<!-- White Container for Certifications -->
+ 
+<div class="skills-certifications">
+  <h2>Certificates</h2>
+
+  <div class="certification-entry">
+    
+    <img
+      src="assets/cert1.png"
+      alt="Red Hat Attendance Certificate"
+      class="cert-thumb"
+      onclick="openCertPopup('assets/cert1.png', 'Red Hat Attendance Certificate')"
+    />
+
+     <img
+      src="assets/cert2.png"
+      alt="Google Analytics Certificate"
+      class="cert-thumb"
+      onclick="openCertPopup('assets/cert2.png', 'Google Analytics Certificate')"
+    />
+
+    <img
+      src="assets/cert3.jpg"
+      alt="Certificate of Participation in Seminar"
+      class="cert-thumb"
+      onclick="openCertPopup('assets/cert3.jpg', 'Certificate of Participation in Seminar')"
+    />
+
+    <img
+      src="assets/cert4.png"
+      alt="Certificate of Attendance Blockchain Conference "
+      class="cert-thumb"
+      onclick="openCertPopup('assets/cert4.png', 'Certificate of Attendance Blockchain Conference ')"
+    />
+
+    <img
+      src="assets/cert5.png"
+      alt="Responsive Web Design Certification"
+      class="cert-thumb"
+      onclick="openCertPopup('assets/cert5.png', 'Responsive Web Design Certification')"
+    />
+
+    <img
+      src="assets/cert6.png"
+      alt="Certificate of Attendance"
+      class="cert-thumb"
+      onclick="openCertPopup('assets/cert6.png', 'Certificate of Attendance')"
+    />
+
+    <img
+      src="assets/cert7.png"
+      alt="Certificate of Attendance"
+      class="cert-thumb"
+      onclick="openCertPopup('assets/cert7.png', 'Certificate of Attendance')"
+    />
+
+
+
+  </div>
+</div>
+
+<!-- Popup Modal -->
+<div id="cert-popup" class="cert-popup">
+  <div class="cert-popup-content">
+    <span class="close-cert-popup" onclick="closeCertPopup()">&times;</span>
+    <h3 id="cert-popup-title"></h3>
+    <img id="cert-popup-img" src="" alt="Certificate" />
+  </div>
+</div>
+
+
+
+    <!-- Third Container (Right Bottom): Awards -->
+    <div class="skills-awards">
+      <h3>Awards</h3>
+      <div class="award-list">
+        <div class="award-item">📜 Dean's Lister 2021-2022 2nd Semester</div>
+        <div class="award-item">📜 Dean's Lister 2022-2023 2nd Semester</div>
+        <div class="award-item">📜 Dean's Lister 2023-2024 2nd Semester</div>
+        <div class="award-item">📜 Dean's Lister 2024-2025 1st Semester</div>
+      </div>
+    </div>
+  </div>
+
+  
+</section>
+
+<!-- ===== CONTACT PAGE SECTION ===== -->
+
+
+<section id="contact">
+  <!-- Navigation -->
+  <nav class="contact-nav">
+    <a href="#about">ABOUT ME</a>
+    <a href="#projects">WORKS</a>
+    <a href="#skills">SKILLS AND CERTIFICATES</a>
+  </nav>
+
+  <div class="contact-wrapper">
+    
+    <!-- Left (no container) -->
+    <div class="contact-left">
+  <div class="logo-wrapper">
+    <img src="assets/logo.png" alt="Logo" class="contact-logo" />
+  </div>
+  
+  <div class="social-icons">
+  <a href="https://www.facebook.com/kharlarhn" target="_blank">
+    <img src="assets/facebook.png" alt="Facebook Icon" />
+  </a>
+  <a href="https://www.linkedin.com/in/kharla-manabat/" target="_blank">
+    <img src="assets/linkedin.png" alt="LinkedIn Icon" />
+  </a>
+  <a href="" target="_blank">
+    <img src="assets/github.png" alt="Github Icon" />
+  </a>
+</div>
+
+</div>
+
+
+    <!-- Right (form in container) -->
+    <!-- Right (contact text only, no form) -->
+<div class="right-box animated-contact">
+
+  <h2>Get in Touch</h2>
+  <p>You can reach me at:</p>
+  <p class="email-display" onclick="copyEmail()" title="Click to copy!">
+    📧 kharlarhoen@gmail.com
+  </p>
+
+  <p id="copy-message" class="copy-feedback">Copied!</p>
+</div>
+
+
+
+  </div>
+</section>
+
+
+
+
+<!-- === POPUP MODAL FOR PROJECT DETAILS === -->
+<div class="project-popup" id="projectPopup">
+  <div class="project-popup-content">
+    <span class="close-popup" onclick="closePopup()">&times;</span>
+    <h3 id="popupTitle">Project Title</h3>
+    <p id="popupDescription">Project description will appear here.</p>
+    <a id="popupLink" href="#" target="_blank" class="project-link-btn">VIEW FULL PROJECT</a>
+  </div>
+</div>
+
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
